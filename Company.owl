@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#hasDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#hasDepartment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#hasLocations -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#hasLocations">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#hasProjects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#hasProjects">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Associate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#BranchDevelopmentManager"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#HRManager"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Supervisor"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Trainnee"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Employee_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Employee_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#First_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#First_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Last_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Last_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location_city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location_city">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#role -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#role">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#salary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#salary">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Associate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Associate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#BranchDevelopmentManager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#BranchDevelopmentManager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Manager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#HRManager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#HRManager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Manager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Supervisor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Supervisor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Trainnee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Trainnee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Deaprtment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#Deaprtment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#company_employee -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#company_employee">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+        <department_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01</department_id>
+        <department_name>HR</department_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+        <department_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</department_id>
+        <department_name>Sales</department_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+        <department_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">03</department_id>
+        <department_name>Production</department_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#department"/>
+        <department_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">04</department_id>
+        <department_name>Marketing</department_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <Employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01</Employee_id>
+        <First_Name>havya</First_Name>
+        <Last_Name>paluri</Last_Name>
+        <role>manager</role>
+        <salary>$150</salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <hasProjects rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project1"/>
+        <Employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01</Employee_id>
+        <First_Name>Navya</First_Name>
+        <Last_Name>paluri</Last_Name>
+        <role>hrmanager</role>
+        <salary>$200</salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <Employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">03</Employee_id>
+        <First_Name>Aishwarya</First_Name>
+        <Last_Name>Arvindh</Last_Name>
+        <role>trainee</role>
+        <salary>$100</salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <Employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01</Employee_id>
+        <First_Name>Gaffar</First_Name>
+        <Last_Name>shaik</Last_Name>
+        <role>branchdevelopment manager</role>
+        <salary>$200</salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#employee"/>
+        <Employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">05</Employee_id>
+        <First_Name>Lavanya</First_Name>
+        <Last_Name>M</Last_Name>
+        <role>supervisior</role>
+        <salary>$100</salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location"/>
+        <location_city>Bangalore</location_city>
+        <location_name>Accenture01</location_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location"/>
+        <location_city>Hyderbad</location_city>
+        <location_name>Accenture02</location_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location"/>
+        <location_city>chennai</location_city>
+        <location_name>Accenture03</location_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#location"/>
+        <location_city>Mumbai</location_city>
+        <location_name>Accenture04</location_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+        <project_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01</project_id>
+        <project_name>Web</project_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+        <project_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</project_id>
+        <project_name>forensic</project_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+        <project_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">03</project_id>
+        <project_name>cloud computing</project_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-9#project"/>
+        <project_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">04</project_id>
+        <project_name>semantic</project_name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
